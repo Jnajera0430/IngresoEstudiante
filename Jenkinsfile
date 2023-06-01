@@ -15,13 +15,13 @@ pipeline{
                     }
                 }
             }
-        },
+        }
         stage("Build Angular"){
             steps{
                 // build angular
                 sh 'npm install'
                 sh 'npm run build'
-            },
+            }
         }
     }
 }
