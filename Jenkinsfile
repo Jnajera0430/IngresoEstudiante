@@ -16,7 +16,6 @@ pipeline{
                 }
             }
         },
-        // stage
         stage("Build Angular"){
             steps{
                 // build angular
