@@ -14,8 +14,8 @@ pipeline{
                         bat 'set DB_NAME=${DB_NAME}'
                     }
                 }
-            },
-        }
+            }
+        },
         // stage
         stage("Build Angular"){
             steps{
