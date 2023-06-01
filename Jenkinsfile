@@ -17,8 +17,13 @@ pipeline{
         }
         stage("Build Angular"){
             steps{
-                sh 'pnpm i'
-                sh 'pnpm run build'
+                if (isUnix()) {
+                    sh 'pnpm i'
+                    sh 'pnpm run build'
+                } else {
+                    bat 'pnpm i'
+                    bat 'pnpm run build'
+                }
             }
         }
     }
