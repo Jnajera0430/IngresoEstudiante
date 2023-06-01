@@ -19,11 +19,11 @@ pipeline{
             steps{
                 script {
                     if (isUnix()) {
-                        sh 'pnpm i'
-                        sh 'pnpm run build'
+                        sh 'npm i'
+                        sh 'npm run build'
                     } else {
-                        bat 'pnpm i'
-                        bat 'pnpm run build'
+                        bat 'npm i'
+                        bat 'npm run build'
                     }
                 }
             }
